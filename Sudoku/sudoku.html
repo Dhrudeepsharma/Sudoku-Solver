@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sudoku.css">
+</head>
+
+<body>
+
+    <div class="head">
+        <h3>Sudoku MasterMind</h3>
+        <h3>Crack the code of your Sudoku</h3>
+    </div> <!-- <div class="top">
+
+        <h1>Sudoku MasterMind</h1>
+        <h3>Crack the code of your Sudoku </h3>
+
+    </div> -->
+    <div class="table">
+        <!-- <textarea id="input"></textarea> -->
+        <table id="input_table" cellspacing="0">
+            <tr>
+                <td><input type="number" pattern="[0-9]" style="width:40px; height:40px; ;background-color: aqua"
+                        required></td>
+                <td><input type="number" Max="9" Min="0" style="width:40px;height:40px ;background-color: aqua"
+                        required></td>
+                <td><input type="number" Max="9" Min="0" style="width:40px;height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px;height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px;height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px;height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px;height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px;height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px;height:40px ;background-color: aqua" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+                <td><input type="number" maxlength="1" style="width:40px; height:40px ;background-color: aqua" /></td>
+            </tr>
+        </table>
+    </div>
+    <button id="solveButton">Solve</button>
+    <div id="buffer"></div>
+
+    <!-- <div id="result_table"></div> -->
+    <script src="sudoku.js">
+
+    </script>
+</body>
+
+</html>
