@@ -6,15 +6,15 @@ Enter the Sudoku puzzle numbers into the grid. Use 0 for empty cells.
 Click the "Solve" button to get the solution.
 The solved Sudoku puzzle will be displayed in the same grid. Any filled-in numbers will be shown in red.
 
-Features:
+Features<br />
 Interactive Grid: Users can input Sudoku numbers directly into a 9x9 grid.
 Solve Button: Solves the Sudoku puzzle and displays the solution in the same grid.
 Loading Indicator: Shows a loading spinner while the puzzle is being solved.
 Highlight Solution: The solution cells are highlighted in red for easy identification
 
-Technologies:
-HTML
-CSS
-JavaScript
+Technologies<br /> 
+HTML<br />
+CSS<br />
+JavaScript<br />
 
 Open HTML, CSS and JavaScript files in your code editor and then run the files for a better experience.
